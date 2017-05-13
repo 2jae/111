@@ -1,0 +1,7 @@
+<div class 'container'>
+  <h1>crud게시판</h1>
+  <% @posts.each do |o| %>
+  <p><a href="/home/show/<%=o.id%>"> 제목 : <%o.title%></a></p>
+  <%end%>
+  <%=link_to '새 글쓰기', home_new_path%>
+</div>
